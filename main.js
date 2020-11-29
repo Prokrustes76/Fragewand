@@ -12,8 +12,7 @@ window.onload = function() {
 
   advent = new Image()
   advent.src = './rsc/Advent.jpg'
-
-  setTimeout(draw, 200)
+  advent.addEventListener('load', draw)
 }
 
 document.addEventListener('mousedown', click)
